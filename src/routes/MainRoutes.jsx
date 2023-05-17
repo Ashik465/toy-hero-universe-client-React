@@ -1,0 +1,23 @@
+import {
+    createBrowserRouter,
+   
+  } from "react-router-dom";
+import MainLayout from "../layout/MainLayout";
+
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <MainLayout></MainLayout>,
+    //   errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "contacts/:contactId",
+        //   element: <Contact />,
+        },
+      ],
+    },
+  ]);
+
+
+  export default router;
