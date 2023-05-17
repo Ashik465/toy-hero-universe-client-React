@@ -5,7 +5,6 @@ import demon from '../../../assets/demonslayer.jpg'
 import spidy from '../../../assets/spidy.jpg'
 
 
-
 const Banner = () => {
   return (
     <>
