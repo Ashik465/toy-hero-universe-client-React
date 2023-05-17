@@ -3,6 +3,8 @@ import {
    
   } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
+import Home from "../pages/Home/home/Home";
+import Blog from "../pages/blogs/Blog";
 
 
   const router = createBrowserRouter([
@@ -12,8 +14,12 @@ import MainLayout from "../layout/MainLayout";
     //   errorElement: <ErrorPage />,
       children: [
         {
-          path: "contacts/:contactId",
-        //   element: <Contact />,
+          path: "/",
+          element: <Home></Home>,
+        },
+        {
+          path: "/blog",
+          element: <Blog></Blog>,
         },
       ],
     },

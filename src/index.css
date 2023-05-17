@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.active{
+  @apply tracking-wide text-yellow-500  hover:underline
+  bg-white font-bold text-lg 
+}
