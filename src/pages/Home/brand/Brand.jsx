@@ -42,8 +42,8 @@ const images = [
 const Brand = () => {
   return (
     <>
-      <div className="text-center">
-        <h2 className="text-4xl text-[#FFC107]  font-bold my-10">
+      <div data-aos="zoom-in-up" className="text-center">
+        <h2  className="text-4xl text-[#FFC107]  font-bold my-10">
             Our Brand Partners
         </h2>
       </div>
