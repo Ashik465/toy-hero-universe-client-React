@@ -6,7 +6,8 @@ import {  useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import { getAuth, updateProfile } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
-import toast, { Toaster } from 'react-hot-toast';
+import Swal from "sweetalert2";
+// import toast, { Toaster } from 'react-hot-toast';
 
 
 const Registration = () => {
@@ -63,18 +64,27 @@ const auth =getAuth(app)
           setError(error)
         });
         form.reset()
+        // toast.success('sign-up successful');
+
         navigate(from, { replace: true });
         console.log(loggedUser)
-        
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Registration successful',
+            showConfirmButton: false,
+            timer: 1500
+          })
         
       })
       .catch((error) => {
         console.log(error)
          setError(error.message) 
+         return 
         
       });
 
-      toast.success('sign-up successful');
+     
 
 
 
@@ -150,7 +160,7 @@ const auth =getAuth(app)
                 <div className="form-control mt-6">
                   <button className="btn btn-main mb-3">Register</button>
                 </div>
-                <Toaster />
+                {/* <Toaster /> */}
                 
   
                 <p>
