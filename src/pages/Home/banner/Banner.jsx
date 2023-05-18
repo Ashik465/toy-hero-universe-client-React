@@ -4,17 +4,26 @@ import superHero from '../../../assets/superheros.jpg'
 import demon from '../../../assets/demonslayer.jpg'
 import spidy from '../../../assets/spidy.jpg'
 import { TypeAnimation } from 'react-type-animation';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 const Banner = () => {
+
+  useEffect(() => {
+    AOS.init({
+        duration : 2000
+    });
+    }, [])
   return (
     <>
      <div className="carousel w-full h-96 my-10">
-  <div id="slide1" className="carousel-item relative w-full">
+  <div   id="slide1" className="carousel-item relative w-full">
     <img src={superHero} className="w-full" />
     <div className="absolute  flex md:items-center  h-full ">
 
-      <div className=' text-white font-bold text-4xl md:text-7xl space-y-2  pt-10 md:pt-0 pl-5 md:pl-32  '>
+      <div data-aos="zoom-in-down" className=' text-white font-bold text-4xl md:text-7xl space-y-2  pt-10 md:pt-0 pl-5 md:pl-32  '>
 
       <TypeAnimation
   sequence={['Welcome to ToyHero Universe', 500, 'Discover the World of action figure toys', 500, 'Find your dream toy from Us', 500,'Dive into the World of Action Figures', 500]}
@@ -34,7 +43,7 @@ const Banner = () => {
 
     <div className="absolute  flex md:items-center  h-full ">
 
-<div className='  font-bold text-4xl md:text-7xl space-y-2  pt-10 md:pt-0 pl-5 md:pl-32 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text '>
+<div  className='  font-bold text-4xl md:text-7xl space-y-2  pt-10 md:pt-0 pl-5 md:pl-32 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text '>
 
 <TypeAnimation
 sequence={['Welcome to ToyHero Universe', 500, 'Unleash Your Inner Hero', 500, 'Enter a World of Legends', 500]}
