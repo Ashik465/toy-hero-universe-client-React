@@ -148,7 +148,7 @@ const auth =getAuth(app)
                   />
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-main mb-3 bg-[">Register</button>
+                  <button className="btn btn-main mb-3">Register</button>
                 </div>
                 <Toaster />
                 
