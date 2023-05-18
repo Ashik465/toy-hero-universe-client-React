@@ -23,7 +23,7 @@ const Gallary = () => {
         <>
 
 <div  className="container mx-auto py-8">
-     <div className="text-center">
+     <div data-aos="zoom-in-up" className="text-center">
      <h2 className="text-4xl text-[#FFC107]  font-bold my-10">Gallery Section</h2>
      </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-8">
