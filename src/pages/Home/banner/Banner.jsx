@@ -17,7 +17,7 @@ const Banner = () => {
       <div className=' text-white font-bold text-4xl md:text-7xl space-y-2  pt-10 md:pt-0 pl-5 md:pl-32  '>
 
       <TypeAnimation
-  sequence={['Welcome to ToyHero Universe', 500, 'Discover the World of action figure toys', 500, 'Find your dream toy from Us', 500]}
+  sequence={['Welcome to ToyHero Universe', 500, 'Discover the World of action figure toys', 500, 'Find your dream toy from Us', 500,'Dive into the World of Action Figures', 500]}
   // style={{ fontSize: '20em' }}
   repeat={Infinity}
 />
@@ -34,7 +34,7 @@ const Banner = () => {
 
     <div className="absolute  flex md:items-center  h-full ">
 
-<div className=' text-white font-bold text-4xl md:text-7xl space-y-2  pt-10 md:pt-0 pl-5 md:pl-32 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text '>
+<div className='  font-bold text-4xl md:text-7xl space-y-2  pt-10 md:pt-0 pl-5 md:pl-32 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text '>
 
 <TypeAnimation
 sequence={['Welcome to ToyHero Universe', 500, 'Unleash Your Inner Hero', 500, 'Enter a World of Legends', 500]}
@@ -56,7 +56,7 @@ repeat={Infinity}
 
     <div className="absolute  flex md:items-center  h-full ">
 
-      <div className=' text-white font-bold text-4xl md:text-7xl space-y-2  pt-10 md:pt-0 pl-5 md:pl-32 bg-gradient-to-r from-green-600 via-red-500 to-indigo-400 inline-block text-transparent bg-clip-text '>
+      <div className='  font-bold text-4xl md:text-7xl space-y-2  pt-10 md:pt-0 pl-5 md:pl-32 bg-gradient-to-r from-green-600 via-red-500 to-indigo-400 inline-block text-transparent bg-clip-text '>
 
       <TypeAnimation
   sequence={['Welcome to ToyHero Universe', 500, 'Where Imagination Comes to Life', 500, 'Embark on Epic Toy Quests', 500]}
