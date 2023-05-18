@@ -105,7 +105,7 @@ const handleResetPassword = () => {
 
     return (
         <>
-            <div className="hero min-h-screen bg-base-200 py-10">
+            <div className="hero min-h-screen bg-base-100 py-10">
       <div className="hero-content flex-col lg:flex-row">
         <div className="w-1/2 lg:pr-20">
         <Lottie animationData={logimg} loop={true} />
