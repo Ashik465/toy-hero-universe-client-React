@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
-// import Swal from "sweetalert2";
+import Swal from "sweetalert2";
 import Select from 'react-select';
 
 
@@ -64,25 +64,25 @@ const AddToy = () => {
 
         console.log(order);
         
-    //    fetch('https://car-doctor-server-eight-eta.vercel.app/addorder',{
-    //        method:'POST',
-    //        headers:{'Content-Type':'application/json'},
-    //        body:JSON.stringify(order)
-    //      })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             if(data.insertedId){
-    //                 Swal.fire({
-    //                     position: 'center',
-    //                     icon: 'success',
-    //                     title: 'Toy created Successfully',
-    //                     showConfirmButton: false,
-    //                     timer: 1500
-    //                   })
+       fetch('http://localhost:5000/addToy',{
+           method:'POST',
+           headers:{'Content-Type':'application/json'},
+           body:JSON.stringify(order)
+         })
+            .then(res => res.json())
+            .then(data => {
+                if(data.insertedId){
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Toy created Successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
                    
-    //             }
-    //         }
-    //         )
+                }
+            }
+            )
          
 
 
