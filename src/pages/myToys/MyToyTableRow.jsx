@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-const MyToyTableRow = ({toy,index}) => {
+const MyToyTableRow = ({toy,index,handleDeleteToy}) => {
 
 
     const {
@@ -51,7 +51,7 @@ const MyToyTableRow = ({toy,index}) => {
         <Link to={`/update/${_id}`} className=" btn btn-success ">Update</Link>
        </td>
        <td>
-        <button className=" btn btn-warning btn-circle btn-outline ">X</button>
+        <button onClick={()=>handleDeleteToy(_id)} className=" btn btn-warning btn-circle btn-outline ">X</button>
        </td>
 
     </tr>   
