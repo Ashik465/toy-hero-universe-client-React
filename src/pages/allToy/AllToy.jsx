@@ -29,23 +29,22 @@ const  [toys, setToys] = useState([])
           {/* head */}
           <thead>
             <tr>
-              <th></th>
-              <th>Image </th>
-              <th>Toy Name & Category </th>
-              <th>Seller Name </th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Details</th>
-
-              <th></th>
+              <th className=" bg-red-300"></th>
+              <th className=" bg-red-300">Image </th>
+              <th className=" bg-red-300">Toy Name & Category </th>
+              <th className=" bg-red-300">Seller Name </th>
+              <th className=" bg-red-300">Price</th>
+              <th className=" bg-red-300">Quantity</th>
+              <th className=" bg-red-300">Details</th>
+              <th className=" bg-red-300"></th>
             </tr>
           </thead>
           <tbody>
             {/* row 1 */}
 
-            {toys.map((toy) => (
+            {toys.map((toy, index) => (
               <AllToyTableRow
-               
+              index={index}
                 toy={toy}
                 key={toy._id}
                

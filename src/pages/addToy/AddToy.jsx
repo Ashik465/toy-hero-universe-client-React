@@ -145,7 +145,7 @@ const AddToy = () => {
 
         <div className="form-control">
           
-          <input type="text" name="price"  placeholder="Price" className="input input-bordered" />
+          <input type="number" name="price"  placeholder="Price" className="input input-bordered" />
          
         </div>
 

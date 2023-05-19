@@ -1,6 +1,6 @@
 
 
-const AllToyTableRow = ({toy}) => {
+const AllToyTableRow = ({toy,index}) => {
 
 
     const {toyName,
@@ -14,7 +14,7 @@ const AllToyTableRow = ({toy}) => {
     return (
         <>
           <tr>
-      <td></td>
+          <td>{index+1}</td>
       <td>
         <div className="flex items-center space-x-3">
           <div className="avatar">
