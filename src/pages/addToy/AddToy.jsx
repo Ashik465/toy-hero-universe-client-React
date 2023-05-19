@@ -158,8 +158,9 @@ const AddToy = () => {
 
       <div className="form-control p-5 ">
           
-          <input type="text" name="description"  placeholder="Toy description" className="input input-bordered h-40" />
          
+          <textarea name="description" placeholder="Toy description" className="textarea textarea-bordered textarea-lg w-full " ></textarea>
+
         </div>
       <div className="form-control mt-6 p-5">
         
