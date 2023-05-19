@@ -39,31 +39,31 @@ const MyToys = () => {
   
   {/* All-toy table start */}
 
-  <div className="overflow-x-auto w-full my-10">
-        <table className="table w-full">
+  <div className="overflow-x-auto  w-full my-10">
+        <table className="table w-full ">
           {/* head */}
-          <thead>
-            <tr>
-              <th></th>
-              <th>Image </th>
-              <th>Toy Name & Category </th>
-              <th>Seller Name </th>
-              <th>Email </th>
-              <th>Price</th>
-              <th>Details</th>
-              <th>Quantity</th>
-              <th>Update</th>
-              <th>Delete</th>
+          <thead >
+            <tr >
+              <th className=" bg-amber-100"></th>
+              <th className=" bg-amber-100">Image </th>
+              <th className=" bg-amber-100">Toy Name & Category </th>
+              <th className=" bg-amber-100">Seller Name </th>
+              <th className=" bg-amber-100">Email </th>
+              <th className=" bg-amber-100">Price</th>
+              <th className=" bg-amber-100">Details</th>
+              <th className=" bg-amber-100">Quantity</th>
+              <th className=" bg-amber-100">Update</th>
+              <th className=" bg-amber-100">Delete</th>
 
-              <th></th>
+              <th className=" bg-amber-100"></th>
             </tr>
           </thead>
           <tbody>
             {/* row 1 */}
 
-            {myToys.map((toy) => (
+            {myToys.map((toy,index ) => (
               <MyToyTableRow
-               
+              index={index}
                 toy={toy}
                 key={toy._id}
                
