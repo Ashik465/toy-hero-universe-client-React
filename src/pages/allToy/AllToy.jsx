@@ -12,15 +12,44 @@ const  [toys, setToys] = useState([])
         fetch('http://localhost:5000/toys')
         .then(res => res.json())
         .then(data =>{ setToys(data)
-            console.log(data);})
+            // console.log(data)
+            
+            ;})
     },[])
+
+
+// search toy 
+
+const handleSearchToy = (e) => {    
+   
+
+    
+    const search = e.target.value;
+
+    // console.log(search);
+
+    fetch(`http://localhost:5000/search/${search}`)
+    .then(res => res.json())
+    .then(data =>{ setToys(data)
+        // console.log(data);
+    
+    })
+        
+}
+
+
 
 
 
     return (
         <>
 
+                <div className=" my-5 flex justify-center p-5">
 
+                <input onChange={handleSearchToy} type="text" placeholder="search" className="input input-bordered input-accent w-full max-w-xs" />
+                <button className="ml-3  btn btn-success">Search</button>
+
+                </div>
 
                     {/* All-toy table start */}
 
