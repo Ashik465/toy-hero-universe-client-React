@@ -29,8 +29,8 @@ const handleLogout =()=>{
       <li> <NavLink className='font-bold' to="/">Home</NavLink></li>
       <li> <NavLink className='font-bold' to="/alltoys">All Toys</NavLink></li>
      {user ?.email &&  <li> <NavLink className='font-bold' to="/mytoys">My Toys</NavLink></li>}
-      {user?.email && <li> <NavLink className='font-bold' to="/addatoy">Add a Toy</NavLink></li>}
-      <li> <NavLink className='font-bold' to="/blog">Blog</NavLink></li>
+      {user?.email && <li> <NavLink className='font-bold' to="/addtoy">Add a Toy</NavLink></li>}
+      <li> <NavLink className='font-bold' to="/blog">Blogs</NavLink></li>
       </ul>
     </div>
     <Link to ='/' className="btn btn-ghost normal-case text-lg font-bold sm:text-4xl ">  <span className="text-red-600 ">Toy</span>Hero  <span className="text-red-600 ml-1">Uni</span>verse</Link>
@@ -40,8 +40,8 @@ const handleLogout =()=>{
       <li> <NavLink className='font-bold' to="/">Home</NavLink></li>
       <li> <NavLink className='font-bold' to="/alltoys">All Toys</NavLink></li>
      {user ?.email &&  <li> <NavLink className='font-bold' to="/mytoys">My Toys</NavLink></li>}
-      {user?.email && <li> <NavLink className='font-bold' to="/addatoy">Add a Toy</NavLink></li>}
-      <li> <NavLink className='font-bold' to="/blog">Blog</NavLink></li>
+      {user?.email && <li> <NavLink className='font-bold' to="/addtoy">Add a Toy</NavLink></li>}
+      <li> <NavLink className='font-bold' to="/blog">Blogs</NavLink></li>
      
       
     </ul>
