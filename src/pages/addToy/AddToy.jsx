@@ -10,8 +10,7 @@ const AddToy = () => {
 
 
     const {user} = useContext(AuthContext)
-    // const service = useLoaderData()
-    // const {title,price,_id,img} = service
+
 
 
     //select option
@@ -50,6 +49,7 @@ const AddToy = () => {
         const email = user?.email;
         const rating = from.rating.value;
         const toyImg = from.toyImg.value;
+        const Quantity = from.Quantity.value;
          const description = from.description.value;
          const toyCategory = selectedOption.value;
 
@@ -59,7 +59,8 @@ const AddToy = () => {
             price,
             email,
             description,rating,
-            toyCategory
+            toyCategory,
+            Quantity
             
         }
 
@@ -137,10 +138,16 @@ const AddToy = () => {
         
         <div className="form-control">
           
-          <input type="number" name="rating"  placeholder="Rating" className="input input-bordered" />
+          <input type="text" name="rating"  placeholder="Rating" className="input input-bordered" />
          
         </div>
       </div>
+
+      <div className="form-control p-5">
+          
+          <input type="number" name="Quantity"  placeholder="Available Quantity" className="input input-bordered" />
+         
+        </div>
 
       <div className="form-control p-5">
           
