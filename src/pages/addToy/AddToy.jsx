@@ -51,7 +51,31 @@ const AddToy = () => {
         const toyImg = from.toyImg.value;
         const Quantity = from.Quantity.value;
          const description = from.description.value;
-         const toyCategory = selectedOption.value;
+         const toyCategory = selectedOption?.value;
+
+        
+
+            if(!toyCategory ) {
+
+            return Swal.fire({  
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please fill  the toy category field!'
+                })
+            }
+
+            if(!price ) {
+
+                return Swal.fire({  
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please fill  the price field!'
+                    })
+             }
+
+
+
+
 
         const order = { sellerName,
             toyName,

@@ -36,14 +36,14 @@ const MyToyTableRow = ({toy}) => {
       <td>{sellerName}</td>
       <td>{email}</td>
       <td>$ {price}</td>
-      <td>{Quantity}</td>
+      
       <td><div>
          <p className="">
          {description.slice(0, 15)}....
          </p>
         </div></td>
      
-      
+      <td>{Quantity}</td>
        <td>
         <button className=" btn btn-success ">Update</button>
        </td>
