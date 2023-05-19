@@ -35,7 +35,7 @@ const  [toys, setToys] = useState([])
               <th>Seller Name </th>
               <th>Price</th>
               <th>Quantity</th>
-              <th>Datails</th>
+              <th>Details</th>
 
               <th></th>
             </tr>
