@@ -50,8 +50,8 @@ const MyToys = () => {
               <th>Seller Name </th>
               <th>Email </th>
               <th>Price</th>
-              <th>Quantity</th>
               <th>Details</th>
+              <th>Quantity</th>
               <th>Update</th>
               <th>Delete</th>
 
