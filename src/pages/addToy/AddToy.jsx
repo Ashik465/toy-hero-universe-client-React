@@ -124,7 +124,7 @@ const AddToy = () => {
            {/* from start  */}
 
      
-    <div className="  rounded-lg bg-info my-20">
+    <div className="  rounded-lg bg-violet-200 my-20">
      <form onSubmit={handleAddToy} className="p-5" >
      <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 p-5">
         <div className="form-control">

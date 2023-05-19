@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 
 
 const MyToyTableRow = ({toy,index}) => {
 
 
-    const {toyName,
+    const {
+        _id,
+        toyName,
         toyImg,
         price,
         sellerName,
@@ -45,7 +48,7 @@ const MyToyTableRow = ({toy,index}) => {
      
       <td>{Quantity}</td>
        <td>
-        <button className=" btn btn-success ">Update</button>
+        <Link to={`/update/${_id}`} className=" btn btn-success ">Update</Link>
        </td>
        <td>
         <button className=" btn btn-warning btn-circle btn-outline ">X</button>
