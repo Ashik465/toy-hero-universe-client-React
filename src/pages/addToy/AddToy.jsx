@@ -20,6 +20,7 @@ const AddToy = () => {
         { value: 'Marvel', label: 'Marvel' },
         { value: 'Star wars', label: 'Star wars' },
         { value: 'DC', label: 'DC' },
+        { value: 'Transformers', label: 'Transformers' },
         
       ];
       const customStyles = {
