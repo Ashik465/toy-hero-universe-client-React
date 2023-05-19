@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { Tooltip } from "react-tooltip";
 import LoadingSpinner from "../loader/LoadingSpinner";
-
+import logo from  '../assets/toyherologo.png'
 
 const Navbar = () => {
   const {user,logout,loader } = useContext(AuthContext)
@@ -41,6 +41,13 @@ const handleLogout =()=>{
       <li> <NavLink className='font-bold' to="/blog">Blogs</NavLink></li>
       </ul>
     </div>
+
+    {/* logo */}
+    <div className="avatar">
+  <div className="w-12 rounded-full">
+    <img src={logo} />
+  </div>
+</div>
     <Link to ='/' className="btn btn-ghost normal-case text-lg font-bold sm:text-4xl ">  <span className="text-red-600 ">Toy</span>Hero  <span className="text-red-600 ml-1">Uni</span>verse</Link>
   </div>
   <div className="navbar-center hidden lg:flex">

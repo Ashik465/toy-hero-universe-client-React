@@ -29,7 +29,7 @@ const AllToyTableRow = ({toy}) => {
       <td>
       <div>
             <div className="font-bold">{toyName}</div>
-            <div className="text-sm opacity-50">category {toyCategory} </div>
+            <div className="text-sm opacity-50">category :  {toyCategory} </div>
           </div>
       </td>
       <td>{sellerName}</td>
