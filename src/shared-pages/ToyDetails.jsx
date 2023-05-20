@@ -34,8 +34,8 @@ useTitle('Toy Details')
     return (
         <>
            <div className="hero min-h-screen bg-base-100 my-10">
-  <div className="hero-content flex-col p-10 ">
-    <img src={toyImg} className=" max-w-sm  md:max-w-lg rounded-lg shadow-2xl" />
+  <div className="hero-content flex-col  ">
+    <img src={toyImg} className=" max-w-xs  md:max-w-lg rounded-lg shadow-2xl" />
     <div className="my-3 space-y-4">
       <h1 className="text-4xl text-[#FFC107] font-bold">Toy Name: <span className="text-red-400">{toyName}</span></h1>
       <h1 className="text-xl "> <span className="font-bold text-[#FFC107] "> Seller Name:</span>  {sellerName}</h1>
