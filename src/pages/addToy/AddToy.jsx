@@ -90,7 +90,7 @@ const AddToy = () => {
 
         console.log(order);
         
-       fetch('http://localhost:5000/addToy',{
+       fetch('https://toy-hero-universe-server.vercel.app/addToy',{
            method:'POST',
            headers:{'Content-Type':'application/json'},
            body:JSON.stringify(order)

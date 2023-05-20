@@ -33,7 +33,7 @@ const  [toyData, setToyData] = useState([]);
 
   
    useEffect(() => {
-    fetch(`http://localhost:5000/toys/${activeTab}`)
+    fetch(`https://toy-hero-universe-server.vercel.app/toys/${activeTab}`)
     .then(res => res.json())
     .then(data =>{ 
         console.log(data);
