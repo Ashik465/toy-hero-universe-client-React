@@ -5,6 +5,7 @@ import Brand from "../brand/Brand";
 import Gallary from "../gallary/Gallary";
 import OurServices from "../ourServices/OurServices";
 import LoadingSpinner from "../../../loader/LoadingSpinner";
+import ShopByCategory from "../shopByCategory/ShopByCategory";
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ if(loader){
         <>
             <Banner></Banner>
             <Gallary></Gallary>
+            <ShopByCategory></ShopByCategory>
             <Brand></Brand>
             <OurServices></OurServices>
 

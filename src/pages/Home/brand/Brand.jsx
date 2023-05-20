@@ -16,6 +16,9 @@ import brand14 from "../../../assets/brand14.jpg";
 import brand15 from "../../../assets/brand15.jpg";
 import brand16 from "../../../assets/brand16.jpg";
 import brand17 from "../../../assets/brand17.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 
@@ -40,6 +43,12 @@ const images = [
   ];
 
 const Brand = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration : 2000
+        });
+        }, [])
   return (
     <>
       <div data-aos="zoom-in-up" className="text-center">

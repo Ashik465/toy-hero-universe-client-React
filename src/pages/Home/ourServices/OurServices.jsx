@@ -25,7 +25,7 @@ const OurServices = () => {
       ];
     return (
         <>
-       <section className="bg-gray-100 py-12">
+       <section className="bg-gray-100 py-12 my-20">
       <div className="container mx-auto">
         <h2 data-aos="zoom-in-up" className="text-4xl text-[#FFC107] text-center font-bold my-10">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-8">
