@@ -18,7 +18,7 @@ const UpdateToyData = () => {
     //  fetch single toy from database 
     
      useEffect(() => {
-        fetch(`http://localhost:5000/mytoys/${id}`)
+        fetch(`https://toy-hero-universe-server.vercel.app/mytoys/${id}`)
         .then(res => res.json())
         .then(data => {console.log(data);
             setToy(data)})
@@ -40,7 +40,7 @@ const handleUpdateToy = (e) => {
 
     console.log(updateToy);
 
-    fetch(`http://localhost:5000/mytoys/${id}`,{
+    fetch(`https://toy-hero-universe-server.vercel.app/mytoys/${id}`,{
         method:'PUT',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(updateToy)
