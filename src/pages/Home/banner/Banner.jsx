@@ -18,7 +18,7 @@ const Banner = () => {
     }, [])
   return (
     <>
-     <div className="carousel w-full h-96 my-10">
+     <div className="carousel w-full h-96 mb-10">
   <div   id="slide1" className="carousel-item relative w-full">
     <img src={superHero} className="w-full" />
     <div className="absolute  flex md:items-center  h-full ">

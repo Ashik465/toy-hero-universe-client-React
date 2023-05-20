@@ -6,7 +6,7 @@
 
 .active{
   @apply tracking-wide text-yellow-500  hover:underline
-  bg-white font-bold text-lg 
+  bg-[#dbeafe] font-bold text-lg 
 }
 
 .btn-main{

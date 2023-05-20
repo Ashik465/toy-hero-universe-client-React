@@ -1,10 +1,11 @@
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Rating } from '@smastrom/react-rating';
 import Swal from 'sweetalert2';
+import { AuthContext } from '../../../provider/AuthProvider';
 const CategoryCard = ({toy}) => {
 
     useEffect(() => {
@@ -14,6 +15,7 @@ const CategoryCard = ({toy}) => {
         }, [])
 
  const location = useLocation()
+ const {user} = useContext(AuthContext)
 
     const handleNotifaction = () => {
       Swal.fire({
@@ -28,7 +30,7 @@ const CategoryCard = ({toy}) => {
       const { toyName, toyImg, price,  rating,_id } = toy;
     return (
         <>
-           <div  data-aos="fade-left" className="card card-side bg-base-100 shadow-xl ">
+           <div  data-aos="fade-left" className="card card-side bg-[#dbeafe] shadow-xl ">
   <figure><img className=" w-96 object-cover" src={toyImg} alt="toy"/></figure>
   <div className="card-body space-y-3">
     <h2 className=" font-bold text-2xl">{toyName}</h2>
@@ -42,9 +44,11 @@ const CategoryCard = ({toy}) => {
     /></span>
     
     {/* </h1> */}
-    <div className="">
+    {user?.email ? <div className="">
+      <Link  state={location} to={`/toydetails/${_id}`} className="btn btn-sm bg-[#DC143C] border-none text-white ">View-Details</Link>
+    </div>: <div className="">
       <Link onClick={handleNotifaction} state={location} to={`/toydetails/${_id}`} className="btn btn-sm bg-[#DC143C] border-none text-white ">View-Details</Link>
-    </div>
+    </div>}
   </div>
 </div> 
         </>
