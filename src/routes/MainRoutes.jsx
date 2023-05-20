@@ -13,6 +13,7 @@ import AllToy from "../pages/allToy/AllToy";
 import MyToys from "../pages/myToys/MyToys";
 import UpdateToyData from "../pages/myToys/UpdateToyData";
 import ToyDetails from "../shared-pages/ToyDetails";
+import ErrorPage from "../pages/errorPage/ErrorPage";
 
 
 
@@ -20,7 +21,7 @@ import ToyDetails from "../shared-pages/ToyDetails";
     {
       path: "/",
       element: <MainLayout></MainLayout>,
-    //   errorElement: <ErrorPage />,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
           path: "/",
