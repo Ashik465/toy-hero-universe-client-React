@@ -1,9 +1,11 @@
+import { Link, useLocation } from "react-router-dom";
 
 
 const AllToyTableRow = ({toy,index}) => {
 
-
+const location = useLocation()
     const {toyName,
+        _id,
         toyImg,
         price,
         sellerName,
@@ -38,7 +40,7 @@ const AllToyTableRow = ({toy,index}) => {
      
 
        <td>
-        <button className=" btn btn-main">view Details</button>
+        <Link state={location} to={`/toydetails/${_id}`} className=" btn btn-main">view Details</Link>
        </td>
 
     </tr>  

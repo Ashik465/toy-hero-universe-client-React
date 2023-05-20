@@ -4,6 +4,7 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import router from './routes/MainRoutes.jsx'
 import AuthProvider from './provider/AuthProvider'
+import '@smastrom/react-rating/style.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  <div className='max-w-7xl mx-auto'>

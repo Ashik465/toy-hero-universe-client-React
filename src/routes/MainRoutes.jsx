@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute";
 import AllToy from "../pages/allToy/AllToy";
 import MyToys from "../pages/myToys/MyToys";
 import UpdateToyData from "../pages/myToys/UpdateToyData";
+import ToyDetails from "../shared-pages/ToyDetails";
 
 
 
@@ -40,6 +41,10 @@ import UpdateToyData from "../pages/myToys/UpdateToyData";
         {
           path: "/alltoys",
           element:<AllToy></AllToy>,
+        },
+        {
+          path: "/toydetails/:id",
+          element:<PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
         },
         {
           path: "/mytoys",
