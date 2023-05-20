@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Rating } from '@smastrom/react-rating';
+import Swal from 'sweetalert2';
 const CategoryCard = ({toy}) => {
 
     useEffect(() => {
@@ -13,6 +14,16 @@ const CategoryCard = ({toy}) => {
         }, [])
 
  const location = useLocation()
+
+    const handleNotifaction = () => {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You have to log in first to view details!',
+       
+      })
+    } 
+
 
       const { toyName, toyImg, price,  rating,_id } = toy;
     return (
@@ -32,7 +43,7 @@ const CategoryCard = ({toy}) => {
     
     {/* </h1> */}
     <div className="">
-      <Link state={location} to={`/toydetails/${_id}`} className="btn btn-sm bg-[#DC143C] border-none text-white ">View-Details</Link>
+      <Link onClick={handleNotifaction} state={location} to={`/toydetails/${_id}`} className="btn btn-sm bg-[#DC143C] border-none text-white ">View-Details</Link>
     </div>
   </div>
 </div> 
