@@ -6,7 +6,7 @@ import logo from  '../assets/toyherologo.png'
 const Footer = () => {
     return (
         <>
-<footer className="footer p-10 bg-amber-50 text-base-content">
+<footer className="footer px-10 py-20 bg-amber-50 text-base-content ">
   <div>
   <div className="avatar">
   <div className="w-12 rounded-full">
