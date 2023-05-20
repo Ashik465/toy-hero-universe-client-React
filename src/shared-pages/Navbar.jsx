@@ -27,7 +27,7 @@ const handleLogout =()=>{
 }
     return (
         <>
-          <div className="navbar bg-base-100">
+          <div className="navbar bg-blue-100">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -81,7 +81,7 @@ content={user.displayName}></Tooltip>
         <li><a>Settings</a></li>
         <li><Link onClick={handleLogout} to="/login" >Logout</Link></li>
       </ul>
-    </div> : <Link to="/login" className="btn btn-main">Login</Link>}
+    </div> : <Link to="/login" className="btn btn-main ">Login</Link>}
     {/* picture end  */}
   </div>
 </div>
