@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import Swal from "sweetalert2";
 import Select from 'react-select';
+import useTitle from "../../hooks/useTitle";
 
 
 const AddToy = () => {
@@ -11,7 +12,7 @@ const AddToy = () => {
 
     const {user} = useContext(AuthContext)
 
-
+  useTitle('Add Toy')
 
     //select option
     const options = [

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
+import useTitle from "../../hooks/useTitle";
 
 
 
@@ -10,7 +11,7 @@ import Swal from "sweetalert2";
 
 const UpdateToyData = () => {
 
-
+useTitle('Update Toy Data')
     const {id} = useParams();
     console.log(id);
     const [toy,setToy] = useState({});

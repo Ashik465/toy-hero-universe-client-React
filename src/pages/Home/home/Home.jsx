@@ -6,9 +6,12 @@ import Gallary from "../gallary/Gallary";
 import OurServices from "../ourServices/OurServices";
 import LoadingSpinner from "../../../loader/LoadingSpinner";
 import ShopByCategory from "../shopByCategory/ShopByCategory";
+import useTitle from "../../../hooks/useTitle";
 
 
 const Home = () => {
+
+    useTitle('Home')
 
     const {loader } = useContext(AuthContext)
 
