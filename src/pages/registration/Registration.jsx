@@ -8,10 +8,13 @@ import { getAuth, updateProfile } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
 // import Swal from "sweetalert2";
 import toast, { Toaster } from 'react-hot-toast';
+import useTitle from "../../hooks/useTitle";
 
 
 const Registration = () => {
 
+
+  useTitle('Registration')
     const {createEmailUser,setLoader}=useContext(AuthContext)
     const[error,setError] =useState('')
     const navigate = useNavigate();

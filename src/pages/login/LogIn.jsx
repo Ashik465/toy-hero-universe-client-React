@@ -5,10 +5,11 @@ import { AuthContext } from "../../provider/AuthProvider";
 import Lottie from "lottie-react";
 import google from "../../assets/google.png";
 import Swal from "sweetalert2";
+import useTitle from "../../hooks/useTitle";
 
 const LogIn = () => {
 
-
+useTitle('Log In')
     const { signInEmailUser ,googleLogIn,resetPassword } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
