@@ -68,7 +68,7 @@ const handleLogout =()=>{
         <div className="w-10 rounded-full">
         <a  id="my-anchor-element"><img  src={user?.photoURL
 } /></a> <Tooltip anchorSelect="#my-anchor-element"
-content={user.displayName}></Tooltip>
+content={user.displayName} place="left"></Tooltip>
         </div>
       </label>
       <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
