@@ -23,7 +23,7 @@ const Gallary = () => {
         <>
 
 <div  className="container mx-auto py-8">
-     <div data-aos="zoom-in-up" className="text-center">
+     <div  className="text-center">
      <h2 className="text-4xl text-[#FFC107]  font-bold my-10">Gallery Section</h2>
      </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-8">
@@ -38,10 +38,10 @@ const Gallary = () => {
        <div data-aos="fade-left">
          <img src={gallery2} alt="" className="w-full h-full object-cover rounded-xl" /> 
          </div>
-       <div data-aos="fade-up-left"  className='hidden md:flex '>
+       <div data-aos="flip-left"  className='hidden md:flex '>
          <img src={gallery3} alt="" className="w-full h-full object-cover rounded-xl" /> 
          </div>
-       <div data-aos="fade-up-right">
+       <div data-aos="fade-down-left">
          <img src={gallery4} alt="" className="w-full h-full object-cover rounded-xl" /> 
          </div>
        <div data-aos="flip-left" className='md:hidden'>
