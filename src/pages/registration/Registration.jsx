@@ -15,7 +15,7 @@ const Registration = () => {
 
 
   useTitle('Registration')
-    const {createEmailUser,setLoader}=useContext(AuthContext)
+    const {createEmailUser,setUser}=useContext(AuthContext)
     const[error,setError] =useState('')
     const navigate = useNavigate();
     const location =useLocation()
@@ -65,8 +65,15 @@ const auth =getAuth(app)
           displayName:name , photoURL: photoURL
         }).then(() => {
           
-          setLoader(true)
-          window.location.reload()
+          setUser(loggedUser => {
+            const updatedLoggedUser = {...loggedUser}
+            updatedLoggedUser.displayName = name ;
+            updatedLoggedUser.photoURL = photoURL;
+
+         return updatedLoggedUser 
+          })
+          // setLoader(true)
+          // window.location.reload()
         }).catch((error) => {
           // An error occurred
             setError(error)
