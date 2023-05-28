@@ -54,7 +54,7 @@ const googleLogIn = () => {
     };
   }, []);
 
-  const authInfo = { googleLogIn, logout,user,createEmailUser,loader,signInEmailUser,setLoader,resetPassword };
+  const authInfo = { googleLogIn, logout,user,createEmailUser,loader,signInEmailUser,setLoader,resetPassword ,setUser };
 
 
     return (
